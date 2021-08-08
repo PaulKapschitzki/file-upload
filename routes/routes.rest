@@ -1,0 +1,27 @@
+GET http://localhost:3000/uploads
+
+###
+
+GET http://localhost:3000/uploads/610fc6ab937bee77ac1090c9 HTTP/1.1
+
+###
+
+POST http://localhost:3000/uploads HTTP/1.1
+content-type: application/json
+
+{
+  "description": "first test file"
+}
+
+###
+
+DELETE http://localhost:3000/uploads/610fc6ab937bee77ac1090c9 HTTP/1.1
+
+###
+
+PATCH http://localhost:3000/uploads/610fc6ab937bee77ac1090c9
+content-type: application/json
+
+{
+  "description": "updated first test file"
+}
